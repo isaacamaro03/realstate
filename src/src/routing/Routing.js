@@ -1,8 +1,8 @@
 import {
-  BrowserRouter as Router,
+  HashRouter as Router,
   Switch,
-  Route,
   Redirect,
+  Route,
 } from "react-router-dom";
 import Home from "@pages/home";
 import Item from "@pages/item";
@@ -15,7 +15,7 @@ const Routing = () => {
           <Route path="/item/:id">
             <Item />
           </Route>
-          <Route exact path="/">
+          <Route path="/">
             <Home />
           </Route>
           <Route>
