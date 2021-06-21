@@ -1,0 +1,2 @@
+(this.webpackJsonprealstate=this.webpackJsonprealstate||[]).push([[0],{9:function(t,e,n){"use strict";n.r(e);var r=n(1),a=n.n(r),c=n(3),s=n.n(c),o=n(0);var i=function(){return Object(o.jsx)("h1",{children:"Toronto Real State"})};s.a.render(Object(o.jsx)(a.a.StrictMode,{children:Object(o.jsx)(i,{})}),document.getElementById("root"))}},[[9,1,2]]]);
+//# sourceMappingURL=main.2f4b8aa1.chunk.js.map
