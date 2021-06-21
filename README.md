@@ -1,7 +1,7 @@
 # Toronto & Real State website
 
 Rent, buy and announce real state properties in Toronto and region with this application.
-This is a portifolio oriented project.
+The idea here is not to create a fully functional product, but to serve as a UI/UX challenge.
 
 Prototypes were designed using Adobe XD.
 
