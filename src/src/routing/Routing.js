@@ -1,0 +1,31 @@
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Redirect,
+} from "react-router-dom";
+import Home from "@pages/home";
+import Item from "@pages/item";
+
+const Routing = () => {
+  return (
+    <>
+      <Router>
+        <Switch>
+          <Route path="/item/:id">
+            <Item />
+          </Route>
+          <Route exact path="/">
+            <Home />
+          </Route>
+          <Route>
+            {/* Fallback route. */}
+            <Redirect to="/"></Redirect>
+          </Route>
+        </Switch>
+      </Router>
+    </>
+  );
+};
+
+export default Routing;
