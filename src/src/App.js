@@ -1,13 +1,19 @@
 import Routing from "./routing";
-
-import "normalize.css";
+import { CssBaseline } from "@material-ui/core";
+import AppBar from "@components/appBar";
+import ThemeProvider from "@components/themeProvider";
 
 const App = () => {
   return (
-    <div className="app">
-      <header></header>
-      <Routing />
-    </div>
+    <>
+      <CssBaseline />
+      <ThemeProvider>
+        <div className="app">
+          <AppBar />
+          <Routing />
+        </div>
+      </ThemeProvider>
+    </>
   );
 };
 
