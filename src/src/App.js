@@ -6,8 +6,8 @@ import ThemeProvider from "@components/themeProvider";
 const App = () => {
   return (
     <>
-      <CssBaseline />
       <ThemeProvider>
+        <CssBaseline />
         <div className="app">
           <AppBar />
           <Routing />
