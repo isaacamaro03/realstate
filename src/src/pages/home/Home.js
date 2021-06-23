@@ -1,5 +1,5 @@
 import { makeStyles } from "@material-ui/core/styles";
-import BrandTitle from "./BrandTitle";
+import BrandHeader from "./BrandHeader";
 
 const useStyles = makeStyles({
   root: {
@@ -13,7 +13,7 @@ const Home = () => {
 
   return (
     <div className={classes.root}>
-      <BrandTitle></BrandTitle>
+      <BrandHeader></BrandHeader>
     </div>
   );
 };

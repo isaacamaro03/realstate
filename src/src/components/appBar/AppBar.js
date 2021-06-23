@@ -5,7 +5,7 @@ import Button from "@components/button";
 import Bookmark from "@material-ui/icons/Bookmark";
 
 const useStyles = makeStyles({
-  appBar: {
+  root: {
     display: "flex",
     justifyContent: "center",
     flexDirection: "row",
@@ -19,17 +19,19 @@ const useStyles = makeStyles({
     margin: "0 1rem",
   },
 
-  nav: {},
+  nav: {
+    margin: "0 auto",
+  },
 });
 
 const AppBar = () => {
   const classes = useStyles();
 
   return (
-    <header className={classes.appBar} variant="outlined">
+    <header className={classes.root} variant="outlined">
       <div className={classes.innerAppBar}>
         <Logo />
-        <NavBar>
+        <NavBar className={classes.nav}>
           <NavItem>Buy</NavItem>
           <NavItem>Rent</NavItem>
           <NavItem>Sell</NavItem>

@@ -16,7 +16,7 @@ const useStyles = makeStyles({
   },
 });
 
-const BrandTitle = () => {
+const BrandHeader = () => {
   const classes = useStyles();
 
   return (
@@ -34,4 +34,4 @@ const BrandTitle = () => {
   );
 };
 
-export default BrandTitle;
+export default BrandHeader;
