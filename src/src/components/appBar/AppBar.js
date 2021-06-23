@@ -21,6 +21,10 @@ const useStyles = makeStyles({
 
   nav: {
     margin: "0 auto",
+
+    "& .NavItem-root": {
+      fontWeight: "bold",
+    },
   },
 });
 

@@ -1,29 +1,26 @@
-import { Typography, makeStyles, Link } from "@material-ui/core";
+import { Typography, makeStyles } from "@material-ui/core";
+import Link from "@components/link";
 import clsx from "clsx";
 
 const useStyles = makeStyles((theme) => ({
   root: {
-    fontWeight: "bold",
+    display: "flex",
+    gap: ".5rem",
     cursor: "pointer",
   },
 }));
 
-const NavItem = ({ className, children, ...rest }) => {
+const NavItem = ({ className, children, startIcon, ...rest }) => {
   const classes = useStyles();
-
-  const CustomLink = ({ children, ...rest }) => (
-    <Link color="inherit" underline="none" {...rest}>
-      {children}
-    </Link>
-  );
 
   return (
     <Typography
       variant="body1"
-      className={clsx(classes.root, className)}
-      component={CustomLink}
+      className={clsx("NavItem-root", classes.root, className)}
+      component={Link}
       {...rest}
     >
+      {startIcon}
       {children}
     </Typography>
   );

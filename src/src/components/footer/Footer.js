@@ -1,6 +1,12 @@
 import Logo from "@components/logo";
 import { NavBar, NavItem } from "@components/navBar";
+import Link from "@components/link";
 import { makeStyles, Typography } from "@material-ui/core";
+import {
+  Facebook as FacebookIcon,
+  Twitter as TwitterIcon,
+  Instagram as InstagramIcon,
+} from "@material-ui/icons";
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -31,6 +37,7 @@ const useStyles = makeStyles((theme) => ({
     gridColumn: "column-left",
     gridRow: "last-row",
     maxWidth: 172,
+    textAlign: "right",
   },
 }));
 
@@ -48,9 +55,9 @@ const Footer = () => {
           <NavItem>Learn more</NavItem>
         </NavBar>
         <NavBar direction="column">
-          <NavItem>Facebook</NavItem>
-          <NavItem>Twitter</NavItem>
-          <NavItem>Instagram</NavItem>
+          <NavItem startIcon={<FacebookIcon />}>Facebook</NavItem>
+          <NavItem startIcon={<TwitterIcon />}>Twitter</NavItem>
+          <NavItem startIcon={<InstagramIcon />}>Instagram</NavItem>
         </NavBar>
       </div>
       <div className={classes.rightContent}>
@@ -61,7 +68,15 @@ const Footer = () => {
       </div>
       <div className={classes.bottomLeftContent}>
         <Typography variant="caption">
-          © Toronto &amp; Real State - 2021 Designed by Isaac Amaro
+          © Toronto &amp; Real State - 2021 Designed by{" "}
+          <Link
+            color="secondary"
+            href="https://github.com/isaacamaro03"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Isaac Amaro
+          </Link>
         </Typography>
       </div>
     </footer>
