@@ -1,10 +1,12 @@
 import { makeStyles } from "@material-ui/core/styles";
 import BrandHeader from "./BrandHeader";
+import PropertiesSection from "./PropertiesSection";
 
 const useStyles = makeStyles({
   root: {
-    margin: "0 auto",
+    width: "100%",
     maxWidth: 1366,
+    margin: "0 auto",
   },
 });
 
@@ -13,7 +15,8 @@ const Home = () => {
 
   return (
     <div className={classes.root}>
-      <BrandHeader></BrandHeader>
+      <BrandHeader />
+      <PropertiesSection />
     </div>
   );
 };
