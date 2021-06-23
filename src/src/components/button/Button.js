@@ -2,9 +2,7 @@ import clsx from "clsx";
 import { Button as MuiButton, makeStyles } from "@material-ui/core";
 
 const useStyles = makeStyles({
-  root: {
-    textTransform: "none",
-  },
+  root: {},
 });
 
 const Button = ({ children, className, ...rest }) => {
@@ -14,8 +12,8 @@ const Button = ({ children, className, ...rest }) => {
     <MuiButton
       color="primary"
       variant="outlined"
-      {...rest}
       className={clsx(classes.root, className)}
+      {...rest}
     >
       {children}
     </MuiButton>

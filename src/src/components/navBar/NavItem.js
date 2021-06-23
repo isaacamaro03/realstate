@@ -12,7 +12,7 @@ const NavItem = ({ className, children, ...rest }) => {
   const classes = useStyles();
 
   const CustomLink = ({ children, ...rest }) => (
-    <Link color="body1" underline="none" {...rest}>
+    <Link color="inherit" underline="none" {...rest}>
       {children}
     </Link>
   );

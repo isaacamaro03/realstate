@@ -2,6 +2,7 @@ import { makeStyles } from "@material-ui/core/styles";
 import Logo from "@components/logo";
 import { NavBar, NavItem } from "@components/navBar";
 import Button from "@components/button";
+import Bookmark from "@material-ui/icons/Bookmark";
 
 const useStyles = makeStyles({
   appBar: {
@@ -34,7 +35,7 @@ const AppBar = () => {
           <NavItem>Sell</NavItem>
           <NavItem>Learn more</NavItem>
         </NavBar>
-        <Button>Favoritos</Button>
+        <Button endIcon={<Bookmark />}>Favoritos</Button>
       </div>
     </header>
   );

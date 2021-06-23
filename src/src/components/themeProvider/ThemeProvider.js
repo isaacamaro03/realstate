@@ -10,6 +10,13 @@ const theme = createMuiTheme({
         },
       },
     },
+    MuiButton: {
+      root: {
+        textTransform: "none",
+        borderRadius: "8px",
+        lineHeight: "1.25rem",
+      },
+    },
   },
   palette: {
     background: "hsl(354, 100%, 98%)",
