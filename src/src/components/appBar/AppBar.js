@@ -41,7 +41,7 @@ const AppBar = () => {
           <NavItem>Sell</NavItem>
           <NavItem>Learn more</NavItem>
         </NavBar>
-        <Button endIcon={<Bookmark />}>Favoritos</Button>
+        <Button endIcon={<Bookmark />}>Favorites</Button>
       </div>
     </header>
   );

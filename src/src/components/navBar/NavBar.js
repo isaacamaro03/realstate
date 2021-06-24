@@ -18,7 +18,7 @@ const NavBar = ({ className, children, direction, ...rest }) => {
   const classes = useStyles(),
     classList = [classes.root, className];
 
-  if (direction == "column") {
+  if (direction === "column") {
     classList.push(classes.directionColumn);
   }
 

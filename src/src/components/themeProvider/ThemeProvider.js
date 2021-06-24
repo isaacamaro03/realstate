@@ -10,6 +10,11 @@ const theme = createMuiTheme({
         },
       },
     },
+    MuiPaper: {
+      rounded: {
+        borderRadius: "8px",
+      },
+    },
     MuiButton: {
       root: {
         textTransform: "none",
@@ -19,7 +24,10 @@ const theme = createMuiTheme({
     },
   },
   palette: {
-    background: "hsl(354, 100%, 98%)",
+    background: {
+      default: "#fffbfb",
+      paper: "#fffbfb",
+    },
     primary: {
       main: "hsl(354, 89%, 55%)",
     },
