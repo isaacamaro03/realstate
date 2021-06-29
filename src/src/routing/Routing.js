@@ -1,11 +1,11 @@
-import {
-  HashRouter as Router,
-  Switch,
-  Redirect,
-  Route,
-} from "react-router-dom";
 import Home from "@pages/home";
 import Item from "@pages/item";
+import {
+  Redirect,
+  Route,
+  HashRouter as Router,
+  Switch,
+} from "react-router-dom";
 
 const Routing = () => {
   return (

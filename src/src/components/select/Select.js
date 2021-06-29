@@ -1,8 +1,7 @@
 import {
-  Select as MuiSelect,
   FormControl,
   InputLabel,
-  MenuItem,
+  Select as MuiSelect,
   makeStyles,
 } from "@material-ui/core";
 import clsx from "clsx";

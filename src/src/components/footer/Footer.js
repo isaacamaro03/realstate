@@ -1,11 +1,11 @@
+import Link from "@components/link";
 import Logo from "@components/logo";
 import { NavBar, NavItem } from "@components/navBar";
-import Link from "@components/link";
-import { makeStyles, Typography } from "@material-ui/core";
+import { Typography, makeStyles } from "@material-ui/core";
 import {
   Facebook as FacebookIcon,
-  Twitter as TwitterIcon,
   Instagram as InstagramIcon,
+  Twitter as TwitterIcon,
 } from "@material-ui/icons";
 
 const useStyles = makeStyles((theme) => ({

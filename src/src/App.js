@@ -1,8 +1,9 @@
-import Routing from "./routing";
-import { CssBaseline, makeStyles } from "@material-ui/core";
 import AppBar from "@components/appBar";
 import Footer from "@components/footer";
 import ThemeProvider from "@components/themeProvider";
+import { CssBaseline, makeStyles } from "@material-ui/core";
+
+import Routing from "./routing";
 
 const useStyles = makeStyles({
   app: {

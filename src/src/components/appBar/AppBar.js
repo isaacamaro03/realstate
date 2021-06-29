@@ -1,7 +1,7 @@
-import { makeStyles } from "@material-ui/core/styles";
+import Button from "@components/button";
 import Logo from "@components/logo";
 import { NavBar, NavItem } from "@components/navBar";
-import Button from "@components/button";
+import { makeStyles } from "@material-ui/core/styles";
 import Bookmark from "@material-ui/icons/Bookmark";
 
 const useStyles = makeStyles({

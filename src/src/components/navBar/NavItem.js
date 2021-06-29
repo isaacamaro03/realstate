@@ -1,5 +1,5 @@
-import { Typography, makeStyles } from "@material-ui/core";
 import Link from "@components/link";
+import { Typography, makeStyles } from "@material-ui/core";
 import clsx from "clsx";
 
 const useStyles = makeStyles((theme) => ({
