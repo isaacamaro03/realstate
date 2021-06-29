@@ -31,9 +31,6 @@ const Select = ({
         className={clsx(classes.root, className)}
         {...rest}
       >
-        <MenuItem value="">
-          <em>None</em>
-        </MenuItem>
         {children}
       </MuiSelect>
     </FormControl>

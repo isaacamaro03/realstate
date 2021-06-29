@@ -1,6 +1,6 @@
 import { makeStyles } from "@material-ui/core/styles";
 import BrandHeader from "./BrandHeader";
-import PropertiesSection from "./PropertiesSection";
+import PropertiesSection from "./realstate/PropertiesSection";
 
 const useStyles = makeStyles({
   root: {

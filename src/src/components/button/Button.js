@@ -10,7 +10,6 @@ const Button = ({ children, className, ...rest }) => {
 
   return (
     <MuiButton
-      color="primary"
       variant="outlined"
       className={clsx(classes.root, className)}
       {...rest}
