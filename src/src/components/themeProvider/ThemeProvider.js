@@ -31,6 +31,9 @@ const theme = createMuiTheme({
     primary: {
       main: "hsl(354, 89%, 55%)",
     },
+    secondary: {
+      main: "hsl(231, 88%, 58%)",
+    },
   },
   typography: {
     fontFamily: ["Raleway", "Roboto", "sans-serif"].join(","),
