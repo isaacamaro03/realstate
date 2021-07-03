@@ -1,7 +1,7 @@
 import { makeStyles } from "@material-ui/core/styles";
 
 import BrandHeader from "./BrandHeader";
-import PropertiesSection from "./realstate/PropertiesSection";
+import RealStateSection from "./realstate/RealStateSection";
 
 const useStyles = makeStyles({
   root: {
@@ -17,7 +17,7 @@ const Home = () => {
   return (
     <div className={classes.root}>
       <BrandHeader />
-      <PropertiesSection />
+      <RealStateSection />
     </div>
   );
 };
