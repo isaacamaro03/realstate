@@ -1,3 +1,5 @@
+import "App.css";
+
 import AppBar from "@components/appBar";
 import Footer from "@components/footer";
 import ThemeProvider from "@components/themeProvider";

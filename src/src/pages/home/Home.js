@@ -1,7 +1,7 @@
 import { makeStyles } from "@material-ui/core/styles";
 
 import BrandHeader from "./BrandHeader";
-import RealStateSection from "./realstate/RealStateSection";
+import RealStateSection from "./realState/RealStateSection";
 
 const useStyles = makeStyles({
   root: {

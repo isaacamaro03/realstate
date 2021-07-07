@@ -1,7 +1,7 @@
 import { makeStyles } from "@material-ui/core";
 
 import FilterSection from "./filters/FilterSection";
-import RealStateList from "./RealStateList";
+import RealStateList from "./realStateList/RealStateList";
 
 const useStyles = makeStyles((theme) => ({
   root: {},
