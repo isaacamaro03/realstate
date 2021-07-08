@@ -1,12 +1,13 @@
-import { Chip, IconButton, Paper, Typography } from "@material-ui/core";
+import { Chip, Paper, Typography } from "@material-ui/core";
 import { makeStyles } from "@material-ui/core/styles";
 import {
   Bathtub as BathtubIcon,
   BookmarkBorder as BookmarkBorderIcon,
-  KingBed as KingBedIcon,
+  Hotel as HotelIcon,
 } from "@material-ui/icons";
 import HomeTypes from "@models/homeTypes";
 import MarketStyles from "@models/marketStyles";
+import { Link } from "react-router-dom";
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -15,6 +16,9 @@ const useStyles = makeStyles((theme) => ({
     minHeight: "376px",
   },
 
+  imgRoot: {
+    position: "relative",
+  },
   imgBox: {},
   img: {
     width: "100%",
@@ -25,6 +29,19 @@ const useStyles = makeStyles((theme) => ({
   content: {
     flexShrink: 0,
     padding: ".5rem 1rem 1rem",
+  },
+  contentMarketStyle: {
+    display: "inline-flex",
+    position: "absolute",
+    top: 8,
+    left: 8,
+    padding: ".25rem .5rem",
+    backgroundColor: theme.palette.background.paper,
+    borderRadius: 8,
+
+    "& .MuiTypography-root": {
+      fontWeight: "bold",
+    },
   },
   contentPrice: {
     display: "flex",
@@ -89,12 +106,21 @@ const RealStateItem = ({ item }) => {
 
   return (
     <Paper variant="outlined" className={classes.root}>
-      <div className={classes.imgBox}>
-        <img
-          className={classes.img}
-          src={`${baseImgSrc}/0.jpg`}
-          alt={item.fullName}
-        />
+      <div className={classes.imgRoot}>
+        <Link to={`item/${item.id}`}>
+          <span className={classes.contentMarketStyle}>
+            <Typography variant="caption" color="primary">
+              {getMarketStyleText(item.marketStyle)}
+            </Typography>
+          </span>
+          <div className={classes.imgBox}>
+            <img
+              className={classes.img}
+              src={`${baseImgSrc}/0.jpg`}
+              alt={item.fullName}
+            />
+          </div>
+        </Link>
       </div>
       <div className={classes.content}>
         <div className={classes.contentPrice}>
@@ -118,11 +144,8 @@ const RealStateItem = ({ item }) => {
         <Typography variant="subtitle2">
           <b>{getHomeTypeText(item.homeType)}</b>
         </Typography>
-        <Typography variant="subtitle2" color="secondary">
-          <b>{getMarketStyleText(item.marketStyle)}</b>
-        </Typography>
         <div className={classes.contentInfo}>
-          <Chip label="3 bed" variant="outlined" icon={<KingBedIcon />} />
+          <Chip label="3 bed" variant="outlined" icon={<HotelIcon />} />
           <Chip label="2 bath" variant="outlined" icon={<BathtubIcon />} />
         </div>
       </div>
